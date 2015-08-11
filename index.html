@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><title>Neo4j Budapest</title>
+
+    <meta name="keywords" content="neo4j, budapest, neo4jbp, neo4j-bp, neo4j-budapest-users, meetup"/>
+    <meta name="description" content="Neo4j Budapest Meetup">
+    <meta name="author" content="Gabor Dobrei <gabor.dobrei@gmail.com>">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto:100'>
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Neo4jbp</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="https://www.meetup.com/neo4j-budapest-users" target="_blank">Meetup</a></li>
+              <li><a href="https://github.com/Neo4jbp" target="_blank">GitHub</a></li>
+              <li><a href="https://twitter.com/neo4jbp" target="_blank">@neo4jbp</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="intro" class="text-center">
+      <div class="container">
+
+        <img src="assets/img/logo.png" alt="Neo4j logo" />
+        <h1>Neo4j Budapest Meetup Csoport</h1>
+        <a href="https://www.meetup.com/neo4j-budapest-users/join">
+          <button type="button" class="btn btn-default">Csatlakozz a csoporthoz</button>
+        </a>
+
+      </div>
+    </section>
+
+    <section id="organizers">
+      <div class="container">
+
+        <h1>Szervezők</h1>
+
+        <div class="row text-center">
+          <div class="col-md-4">
+            <img src="assets/img/szenyo.jpg" alt="Szendi-Varga János" class="img-responsive img-circle"/>
+            <h3><a href="https://hu.linkedin.com/in/szendivargajanos" target="_blank">Szendi-Varga János</a></h3>
+            <small>Gráf rajongó, IT architekt</small>
+          </div>
+
+          <div class="col-md-4">
+            <img src="assets/img/dobi.jpg" alt="Döbrei Gábor" class="img-responsive img-circle"/>
+            <h3><a href="https://hu.linkedin.com/pub/gábor-döbrei/68/a43/230" target="_blank">Döbrei Gábor</a></h3>
+            <small>Gráf és JS rajongó, Node.js fejlesztő</small>
+          </div>
+
+          <div class="col-md-4">
+            <img src="assets/img/zool.jpeg" alt="Vigh Zoltán" class="img-responsive img-circle"/>
+            <h3><a href="https://hu.linkedin.com/in/zvigh" target="_blank">Vigh Zoltán</a></h3>
+            <small>Gráf és felhő rajongó, Üzemeltetési vezető</small>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="text-center">
+      <div class="container">
+        We <span class="heart"></span> graphs
+      </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        var docHeight = $(window).height();
+        var footerHeight = $('footer').height();
+        var footerTop = $('footer').position().top + footerHeight;
+
+        if (footerTop < docHeight) {
+          $('footer').css('margin-top', (docHeight - footerTop) + 'px');
+        }
+      });
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-43080909-3', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
+
+</html>
