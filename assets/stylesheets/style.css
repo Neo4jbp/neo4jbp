@@ -12,10 +12,6 @@ body {
   padding-top: 70px;
 }
 
-a {
-  text-decoration: none;
-}
-
 .text-center {
   text-align: center;
 }
@@ -28,6 +24,10 @@ span.heart::before {
 #intro {
   min-height: 70%;
   margin-top: 30px;
+}
+
+#organizers a {
+  text-decoration: none;
 }
 
 #organizers h1 {
